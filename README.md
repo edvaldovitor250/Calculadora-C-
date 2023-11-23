@@ -17,7 +17,7 @@ Desenvolvida em C# utilizando o framework .NET (versão 8) e Windows Forms, esta
 | Tecnologia        | Versão | Descrição                                              |
 |-------------------|--------|--------------------------------------------------------|
 | C#                | 17      | Desenvolvida na linguagem C#, oferecendo uma base sólida e robusta. |
-| .NET 8            | 8      | Utilização da versão 8 do framework .NET para aproveitar as últimas melhorias. |
+| .NET              | 4.7.2      | Utilização da versão 8 do framework .NET para aproveitar as últimas melhorias. |
 | Windows Forms     | 12      | Construída com Windows Forms para uma experiência gráfica amigável e intuitiva. |
 
 
