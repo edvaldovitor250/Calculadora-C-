@@ -1,32 +1,46 @@
-# Calculadora em C# com Windows Forms
-
-## Funcionalidades
-
-Desenvolvida em C# utilizando o framework .NET (versão 8) e Windows Forms, esta calculadora proporciona uma experiência de usuário rápida e intuitiva com as seguintes funcionalidades:
-
-- **Soma:** Realize adições com facilidade.
-- **Subtração:** Efetue subtrações de maneira simples.
-- **Multiplicação:** Faça multiplicações de números de forma rápida.
-- **Divisão:** Realize divisões com precisão.
-- **Porcentagem:** Calcule a porcentagem de um valor com facilidade.
-- **Apagar:** Limpe os valores inseridos para começar uma nova operação.
-- **Gerar Resultado:** Obtenha o resultado da operação com um clique.
-
-## Tecnologias Utilizadas
-
-| Tecnologia        | Versão | Descrição                                              |
-|-------------------|--------|--------------------------------------------------------|
-| C#                | 17      | Desenvolvida na linguagem C#, oferecendo uma base sólida e robusta. |
-| .NET              | 4.7.2      | Utilização da versão 8 do framework .NET para aproveitar as últimas melhorias. |
-| Windows Forms     | 12      | Construída com Windows Forms para uma experiência gráfica amigável e intuitiva. |
 
 
-## Lógica de Operações
+<h1>Calculadora em C# com Windows Forms</h1>
 
-Ao escolher uma operação, a lógica utiliza a variável `option` para determinar a operação desejada. Exemplo para a soma:
+<h2>Funcionalidades</h2>
+<p>Desenvolvida em C# utilizando o framework .NET (versão 8) e Windows Forms, esta calculadora proporciona uma experiência de usuário rápida e intuitiva com as seguintes funcionalidades:</p>
+<ul>
+  <li><strong>➕ Soma:</strong> Realize adições com facilidade.</li>
+  <li><strong>➖ Subtração:</strong> Efetue subtrações de maneira simples.</li>
+  <li><strong>✖️ Multiplicação:</strong> Faça multiplicações de números de forma rápida.</li>
+  <li><strong>➗ Divisão:</strong> Realize divisões com precisão.</li>
+  <li><strong>➗ Porcentagem:</strong> Calcule a porcentagem de um valor com facilidade.</li>
+  <li><strong>🔄 Apagar:</strong> Limpe os valores inseridos para começar uma nova operação.</li>
+  <li><strong>✔️ Gerar Resultado:</strong> Obtenha o resultado da operação com um clique.</li>
+</ul>
 
-```csharp
-option = "+";
+<h2>Tecnologias Utilizadas</h2>
+<table>
+  <tr>
+    <th>Tecnologia</th>
+    <th>Versão</th>
+    <th>Descrição</th>
+  </tr>
+  <tr>
+    <td>C#</td>
+    <td>17</td>
+    <td>Desenvolvida na linguagem C#, oferecendo uma base sólida e robusta.</td>
+  </tr>
+  <tr>
+    <td>.NET</td>
+    <td>4.7.2</td>
+    <td>Utilização da versão 8 do framework .NET para aproveitar as últimas melhorias.</td>
+  </tr>
+  <tr>
+    <td>Windows Forms</td>
+    <td>12</td>
+    <td>Construída com Windows Forms para uma experiência gráfica amigável e intuitiva.</td>
+  </tr>
+</table>
+
+<h2>Lógica de Operações</h2>
+<p>Ao escolher uma operação, a lógica utiliza a variável <code>option</code> para determinar a operação desejada. Exemplo para a soma:</p>
+<pre><code>option = "+";
 num1 = int.Parse(txtTotal.Text);
 txtTotal.Clear();
 num2 = int.Parse(txtTotal.Text);
@@ -34,36 +48,21 @@ num2 = int.Parse(txtTotal.Text);
 if (option.Equals("+"))
     result = num1 + num2;
 // Repita a lógica para as demais operações
+</code></pre>
 
-
-```csharp
-option = "+";
-num1 = int.Parse(txtTotal.Text);
-txtTotal.Clear();
-num2 = int.Parse(txtTotal.Text);
-
-if (option.Equals("+"))
-    result = num1 + num2;
-// Repita a lógica para as demais operações
-
-
-# Lógica de Resultado
-
-Para gerar o resultado, a lógica limpa as variáveis e exibe o resultado na interface:
-
-```csharp
-txtTotal.Clear();
+<h2>Lógica de Resultado</h2>
+<p>Para gerar o resultado, a lógica limpa as variáveis e exibe o resultado na interface:</p>
+<pre><code>txtTotal.Clear();
 result = 0;
 num1 = 0;
 num2 = 0;
+</code></pre>
 
-## Operações com Múltiplos Números
-
-Para operações com mais números, utilize um array para armazenar os números e operadores:
-
-```csharp
-int[] numeros;
+<h2>Operações com Múltiplos Números</h2>
+<p>Para operações com mais números, utilize um array para armazenar os números e operadores:</p>
+<pre><code>int[] numeros;
 string[] operadores; 
 int resultado;
 int contador = 0;
+</code></pre>
 
